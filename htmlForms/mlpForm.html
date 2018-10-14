@@ -1,0 +1,31 @@
+<div style="height: 100vh;">
+    <div class="overlay">
+        <h1>Layer Editor</h1>
+        <hr>
+        <div class='form'>
+            <div class="settings">
+                <div>
+                    <b>Layer Index:</b> <a id="layerIndex">4</a>
+                </div>
+                <div>
+                    <b>Units:</b> <input type="number" name="units" id="units" value=10 min=1>
+                </div>
+                <div>
+                    <b>Activation:</b> <select name="activation" id="activation">
+                        <option value="Input">Input</option>
+                        <option value="Sigmoid">Sigmoid</option>
+                        <option value="ReLU">ReLU</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="buttons submit" onclick='updateNet();'>Update Layer</button>
+                <button class="buttons cancel" onclick='closeForm();'>Cancel</button>
+                <button class="buttons delete" onclick='deleteLayer();'>Delete Layer</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

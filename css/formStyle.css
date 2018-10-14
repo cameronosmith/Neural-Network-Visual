@@ -1,0 +1,66 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.overlay {
+    color: #333;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(242, 242, 242,.5);
+    border: solid palevioletred 5px; 
+}
+
+hr {
+    border-style: none none solid none;
+    border-color: palevioletred;
+}
+
+.form {
+    text-align: left;
+    padding: 2em;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-gap: 1em;
+}
+
+input[type=number] {
+    width: 3em;
+}
+
+.buttons {
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.buttons:hover {
+    cursor:pointer;
+}
+
+.submit {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em;
+    font-weight: bolder;
+    background-color: #00bb00;
+}
+
+.cancel {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em;
+    font-weight: bolder;
+    background-color: #999;
+}
+
+.delete {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em;
+    font-weight: bolder;
+    background-color: #cc0000;
+}
+

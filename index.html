@@ -1,0 +1,40 @@
+<title>Neural Network Visual</title>
+<head>
+    <!-- for the pop up forms -->
+    <link rel="stylesheet" type="text/css" href="css/formStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/filePrompt.css">
+
+
+    <script src="js/filePrompt.js"></script>
+
+    <!--scripts to import for three and leap -->
+    <script src="js/jquery.js"></script>
+    <script src="three/Three.js"></script>
+    <script src="three/controls/OrbitControls.js"></script>
+    <script src="three/controls/TransformControls.js"></script>
+
+    <!-- overview script -->
+    <script src="js/ClearAllNodes.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/DataManager.js"></script>
+    <!--conv-->
+    <script src="js/ConvLayer.js"></script>
+    <!--mlp-->
+    <script src="js/WeightNode.js"></script>
+    <script src="js/LayerPlane.js"></script>
+    <script src="js/MLP.js"></script>
+    <script src="js/ObjectManager.js"></script>
+
+    <script src="js/getFormData.js"></script>
+</head>
+
+<div id="overlay"></div>
+
+<div id="choose-file">
+    <h1>Hi there, please specify a model.json file</h1>
+    <input type="file" id="file-button" onchange='readFile();' class="inputfile" accept=".json">
+    <label for="file-button">Choose File</label>
+</div>
+
+
